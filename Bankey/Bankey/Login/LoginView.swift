@@ -5,7 +5,6 @@
 //  Created by Ramon Ferreira do Nascimento on 15/03/22.
 //
 
-import Foundation
 import UIKit
 
 class LoginView: UIView {

@@ -17,15 +17,69 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="370" height="144"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3hb-dm-uBA">
+                    <rect key="frame" x="16" y="16" width="338" height="112"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GwA-OW-ccf">
+                            <rect key="frame" x="0.0" y="0.0" width="234" height="112"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bankey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sA-u9-yVg">
+                                    <rect key="frame" x="0.0" y="0.0" width="234" height="30"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good morning," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIj-ZJ-MaC">
+                                    <rect key="frame" x="0.0" y="38" width="234" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXs-AY-4Bt">
+                                    <rect key="frame" x="0.0" y="66.5" width="234" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVL-t5-b0e">
+                                    <rect key="frame" x="0.0" y="95" width="234" height="17"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rcW-nu-zxx">
+                            <rect key="frame" x="238" y="-0.5" width="100" height="100.5"/>
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="6sj-x3-XcK"/>
+                                <constraint firstAttribute="width" constant="100" id="eDQ-C4-c4b"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3hb-dm-uBA" secondAttribute="bottom" priority="999" constant="16" id="0qY-OH-3dP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3hb-dm-uBA" secondAttribute="trailing" priority="999" constant="16" id="IoB-HO-K5Y"/>
+                <constraint firstItem="3hb-dm-uBA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Oyn-cq-X3s"/>
+                <constraint firstItem="3hb-dm-uBA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="vYz-0d-K0y"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="132" y="125"/>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
         </view>
     </objects>
     <resources>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

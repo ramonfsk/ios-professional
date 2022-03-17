@@ -7,11 +7,23 @@
 
 import UIKit
 
+protocol LogoutDelegate: AnyObject {
+    func didLogout()
+}
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+}
+
 class LoginViewController: UIViewController {
 
+    let titleLabel = UILabel()
+    let greetingsLabel = UILabel()
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
+    
+    weak var delegate: LoginViewControllerDelegate?
     
     var username: String? {
         return loginView.usernameTextField.text
@@ -27,11 +39,31 @@ class LoginViewController: UIViewController {
         style()
         layout()
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        signInButton.configuration?.showsActivityIndicator = false
+    }
 }
 
 extension LoginViewController {
     
     private func style() {
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
+        titleLabel.adjustsFontForContentSizeCategory = true
+        titleLabel.numberOfLines = 0
+        titleLabel.text = "Bankey"
+        
+        greetingsLabel.translatesAutoresizingMaskIntoConstraints = false
+        greetingsLabel.textAlignment = .center
+        greetingsLabel.font = UIFont.preferredFont(forTextStyle: .title3)
+        greetingsLabel.adjustsFontForContentSizeCategory = true
+        greetingsLabel.numberOfLines = 0
+        greetingsLabel.text = "Your premium source for all things banking!"
+        
         loginView.translatesAutoresizingMaskIntoConstraints = false
         
         signInButton.translatesAutoresizingMaskIntoConstraints = false
@@ -48,9 +80,25 @@ extension LoginViewController {
     }
     
     private func layout() {
+        view.addSubview(titleLabel)
+        view.addSubview(greetingsLabel)
         view.addSubview(loginView)
         view.addSubview(signInButton)
         view.addSubview(errorMessageLabel)
+        
+        // Title
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
+            greetingsLabel.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 2)
+        ])
+        
+        // Greetings
+        NSLayoutConstraint.activate([
+            greetingsLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+            greetingsLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
+            loginView.topAnchor.constraint(equalToSystemSpacingBelow: greetingsLabel.bottomAnchor, multiplier: 2)
+        ])
         
         // LoginView
         NSLayoutConstraint.activate([
@@ -83,21 +131,24 @@ extension LoginViewController {
     }
     
     private func login() {
-        guard let username = username, let password = password else {
-            assertionFailure("Username / password should never be nil")
-            return
-        }
-        
-        if username.isEmpty || password.isEmpty {
-            configureView(withMessage: "Username / password cannot be blank")
-            return
-        }
-        
-        if username == "Kevin" && password == "Welcome" {
-            signInButton.configuration?.showsActivityIndicator = true
-        } else {
-            configureView(withMessage: "Incorrect username / password")
-        }
+//        guard let username = username, let password = password else {
+//            assertionFailure("Username / password should never be nil")
+//            return
+//        }
+//
+//        if username.isEmpty || password.isEmpty {
+//            configureView(withMessage: "Username / password cannot be blank")
+//            return
+//        }
+//
+//        if username == "Kevin" && password == "Welcome" {
+//            signInButton.configuration?.showsActivityIndicator = true
+//            delegate?.didLogin()
+//        } else {
+//            configureView(withMessage: "Incorrect username / password")
+//        }
+        signInButton.configuration?.showsActivityIndicator = true
+        delegate?.didLogin()
     }
     
     private func configureView(withMessage message: String) {

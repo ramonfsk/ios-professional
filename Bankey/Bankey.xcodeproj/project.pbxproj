@@ -21,6 +21,7 @@
 		2C7BF60627E0DA0D00A8F85A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF60527E0DA0D00A8F85A /* LoginView.swift */; };
 		2C7BF60A27E10F2300A8F85A /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF60927E10F2300A8F85A /* OnboardingContainerViewController.swift */; };
 		2C7BF60C27E115DE00A8F85A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF60B27E115DE00A8F85A /* OnboardingViewController.swift */; };
+		2CC9DFE427E3D22F002D0BCE /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9DFE327E3D22F002D0BCE /* AccountSummaryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2C7BF60527E0DA0D00A8F85A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2C7BF60927E10F2300A8F85A /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		2C7BF60B27E115DE00A8F85A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2CC9DFE327E3D22F002D0BCE /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				2C6C038027E3BF9200439E82 /* AccountSummaryViewController.swift */,
-				2C6C038227E3C23D00439E82 /* AccountSummaryHeaderView.swift */,
-				2C6C038427E3C26500439E82 /* AccountSummaryHeaderView.xib */,
+				2CC9DFE127E3D1F0002D0BCE /* Header */,
+				2CC9DFE227E3D202002D0BCE /* Cells */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -129,6 +131,23 @@
 				2C7BF60B27E115DE00A8F85A /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2CC9DFE127E3D1F0002D0BCE /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2C6C038227E3C23D00439E82 /* AccountSummaryHeaderView.swift */,
+				2C6C038427E3C26500439E82 /* AccountSummaryHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2CC9DFE227E3D202002D0BCE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CC9DFE327E3D22F002D0BCE /* AccountSummaryCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +227,7 @@
 				2C6C038327E3C23D00439E82 /* AccountSummaryHeaderView.swift in Sources */,
 				2C6C037727E2780100439E82 /* DummyViewController.swift in Sources */,
 				2C7BF5F427E0C3FC00A8F85A /* LoginViewController.swift in Sources */,
+				2CC9DFE427E3D22F002D0BCE /* AccountSummaryCell.swift in Sources */,
 				2C7BF60C27E115DE00A8F85A /* OnboardingViewController.swift in Sources */,
 				2C6C037E27E3881B00439E82 /* MainViewController.swift in Sources */,
 				2C6C038127E3BF9200439E82 /* AccountSummaryViewController.swift in Sources */,

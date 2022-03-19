@@ -1,5 +1,5 @@
 //
-//  DecimalUtils.swift
+//  Decimal+Utils.swift
 //  Bankey
 //
 //  Created by Ramon Ferreira do Nascimento on 18/03/22.

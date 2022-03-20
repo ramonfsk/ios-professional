@@ -134,8 +134,8 @@ extension LoginViewController {
         // Errorlabel
         NSLayoutConstraint.activate([
             errorMessageLabel.topAnchor.constraint(equalToSystemSpacingBelow: signInButton.bottomAnchor, multiplier: 2),
-            errorMessageLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            errorMessageLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
+            errorMessageLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: loginView.leadingAnchor, multiplier: 4),
+            loginView.trailingAnchor.constraint(equalToSystemSpacingAfter: errorMessageLabel.trailingAnchor, multiplier: 4)
         ])
     }
 }
@@ -148,29 +148,39 @@ extension LoginViewController {
     }
     
     private func login() {
-//        guard let username = username, let password = password else {
-//            assertionFailure("Username / password should never be nil")
-//            return
-//        }
-//
-//        if username.isEmpty || password.isEmpty {
-//            configureView(withMessage: "Username / password cannot be blank")
-//            return
-//        }
-//
-//        if username == "Kevin" && password == "Welcome" {
-//            signInButton.configuration?.showsActivityIndicator = true
-//            delegate?.didLogin()
-//        } else {
-//            configureView(withMessage: "Incorrect username / password")
-//        }
-        signInButton.configuration?.showsActivityIndicator = true
-        delegate?.didLogin()
+        guard let username = username, let password = password else {
+            assertionFailure("Username / password should never be nil")
+            return
+        }
+
+        if username.isEmpty || password.isEmpty {
+            configureView(withMessage: "Username / password cannot be blank")
+            return
+        }
+
+        if username == "" && password == "" {
+            signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
+        } else {
+            configureView(withMessage: "Incorrect username / password")
+        }
     }
     
     private func configureView(withMessage message: String) {
         errorMessageLabel.isHidden = false
         errorMessageLabel.text = message
+        shakeButton()
+    }
+    
+    private func shakeButton() {
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "position.x"
+        animation.values = [0, 10, -10, 10, 0]
+        animation.keyTimes = [0, 0.16, 0.5, 0.83, 1]
+        animation.duration = 0.4
+        
+        animation.isAdditive = true
+        signInButton.layer.add(animation, forKey: "shake")
     }
 }
 

@@ -23,6 +23,8 @@
 		2C7BF60C27E115DE00A8F85A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF60B27E115DE00A8F85A /* OnboardingViewController.swift */; };
 		2C898FB127E8C8C100167288 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C898FB027E8C8C100167288 /* ProfileTests.swift */; };
 		2C898FB327E8C94000167288 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C898FB227E8C94000167288 /* AccountTests.swift */; };
+		2C898FB727E90CDC00167288 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C898FB627E90CDC00167288 /* SkeletonLoadable.swift */; };
+		2C898FB927E90D8000167288 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C898FB827E90D8000167288 /* SkeletonCell.swift */; };
 		2CC9DFE427E3D22F002D0BCE /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9DFE327E3D22F002D0BCE /* AccountSummaryCell.swift */; };
 		2CC9DFE627E4D103002D0BCE /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9DFE527E4D103002D0BCE /* Decimal+Utils.swift */; };
 		2CC9DFE827E4D168002D0BCE /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9DFE727E4D168002D0BCE /* CurrencyFormatter.swift */; };
@@ -63,6 +65,8 @@
 		2C7BF60B27E115DE00A8F85A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2C898FB027E8C8C100167288 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
 		2C898FB227E8C94000167288 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		2C898FB627E90CDC00167288 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		2C898FB827E90D8000167288 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		2CC9DFE327E3D22F002D0BCE /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		2CC9DFE527E4D103002D0BCE /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		2CC9DFE727E4D168002D0BCE /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				2CC9DFE327E3D22F002D0BCE /* AccountSummaryCell.swift */,
+				2C898FB627E90CDC00167288 /* SkeletonLoadable.swift */,
+				2C898FB827E90D8000167288 /* SkeletonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6C037C27E3826600439E82 /* UIViewController+Utils.swift in Sources */,
+				2C898FB927E90D8000167288 /* SkeletonCell.swift in Sources */,
 				2CC9E00427E89AE1002D0BCE /* Date+Utils.swift in Sources */,
 				2C7BF60627E0DA0D00A8F85A /* LoginView.swift in Sources */,
 				2C6C037A27E377DB00439E82 /* LocalState.swift in Sources */,
@@ -351,6 +358,7 @@
 				2C6C038127E3BF9200439E82 /* AccountSummaryViewController.swift in Sources */,
 				2C7BF5F027E0C3FC00A8F85A /* AppDelegate.swift in Sources */,
 				2C7BF60A27E10F2300A8F85A /* OnboardingContainerViewController.swift in Sources */,
+				2C898FB727E90CDC00167288 /* SkeletonLoadable.swift in Sources */,
 				2CC9E00627E89BC8002D0BCE /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

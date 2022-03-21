@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C16163427E939F6008995AC /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16163327E939F6008995AC /* ProfileManager.swift */; };
+		2C16163627E93C07008995AC /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16163527E93C07008995AC /* AccountSummaryViewControllerTests.swift */; };
 		2C6C037727E2780100439E82 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C037627E2780100439E82 /* DummyViewController.swift */; };
 		2C6C037A27E377DB00439E82 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C037927E377DB00439E82 /* LocalState.swift */; };
 		2C6C037C27E3826600439E82 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C037B27E3826600439E82 /* UIViewController+Utils.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C16163327E939F6008995AC /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		2C16163527E93C07008995AC /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		2C6C037627E2780100439E82 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		2C6C037927E377DB00439E82 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		2C6C037B27E3826600439E82 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
@@ -97,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C16163227E939B8008995AC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2C16163327E939F6008995AC /* ProfileManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		2C6C037827E377CD00439E82 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 				2CC9E00527E89BC8002D0BCE /* AccountSummaryViewController+Networking.swift */,
 				2CC9DFE127E3D1F0002D0BCE /* Header */,
 				2CC9DFE227E3D202002D0BCE /* Cells */,
+				2C16163227E939B8008995AC /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 			children = (
 				2C898FB027E8C8C100167288 /* ProfileTests.swift */,
 				2C898FB227E8C94000167288 /* AccountTests.swift */,
+				2C16163527E93C07008995AC /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -342,6 +356,7 @@
 				2C6C037C27E3826600439E82 /* UIViewController+Utils.swift in Sources */,
 				2C898FB927E90D8000167288 /* SkeletonCell.swift in Sources */,
 				2CC9E00427E89AE1002D0BCE /* Date+Utils.swift in Sources */,
+				2C16163427E939F6008995AC /* ProfileManager.swift in Sources */,
 				2C7BF60627E0DA0D00A8F85A /* LoginView.swift in Sources */,
 				2C6C037A27E377DB00439E82 /* LocalState.swift in Sources */,
 				2C6C038327E3C23D00439E82 /* AccountSummaryHeaderView.swift in Sources */,
@@ -370,6 +385,7 @@
 				2CC9DFF727E4E009002D0BCE /* CurrencyFormatterTests.swift in Sources */,
 				2C898FB327E8C94000167288 /* AccountTests.swift in Sources */,
 				2C898FB127E8C8C100167288 /* ProfileTests.swift in Sources */,
+				2C16163627E93C07008995AC /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

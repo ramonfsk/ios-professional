@@ -180,6 +180,23 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		2C898FB427E8CAEC00167288 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2CC9DFF627E4E009002D0BCE /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2C898FB527E8CAF600167288 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				2C898FB027E8C8C100167288 /* ProfileTests.swift */,
+				2C898FB227E8C94000167288 /* AccountTests.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
 		2CC9DFE127E3D1F0002D0BCE /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +217,8 @@
 		2CC9DFEE27E4DF6F002D0BCE /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2CC9DFF627E4E009002D0BCE /* CurrencyFormatterTests.swift */,
-				2C898FB027E8C8C100167288 /* ProfileTests.swift */,
-				2C898FB227E8C94000167288 /* AccountTests.swift */,
+				2C898FB527E8CAF600167288 /* AccountSummary */,
+				2C898FB427E8CAEC00167288 /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";

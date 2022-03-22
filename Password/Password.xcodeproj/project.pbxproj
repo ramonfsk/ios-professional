@@ -11,6 +11,7 @@
 		2C16164827E9E152008995AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16164727E9E152008995AC /* ViewController.swift */; };
 		2C16164D27E9E154008995AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C16164C27E9E154008995AC /* Assets.xcassets */; };
 		2C16165027E9E154008995AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C16164E27E9E154008995AC /* LaunchScreen.storyboard */; };
+		2C16165A27E9EFD0008995AC /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16165927E9EFD0008995AC /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2C16164C27E9E154008995AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C16164F27E9E154008995AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C16165127E9E154008995AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C16165927E9EFD0008995AC /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				2C16164327E9E152008995AC /* AppDelegate.swift */,
-				2C16165727E9E1D8008995AC /* Files */,
 				2C16164727E9E152008995AC /* ViewController.swift */,
+				2C16165927E9EFD0008995AC /* PasswordTextField.swift */,
+				2C16165727E9E1D8008995AC /* Files */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C16164827E9E152008995AC /* ViewController.swift in Sources */,
+				2C16165A27E9EFD0008995AC /* PasswordTextField.swift in Sources */,
 				2C16164427E9E152008995AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,7 @@ struct PasswordCriteria {
         text.range(of: "[a-z]+", options: .regularExpression) != nil
     }
     
-    static func digiteMet(_ text: String) -> Bool {
+    static func digitMet(_ text: String) -> Bool {
         text.range(of: "[0-9]+", options: .regularExpression) != nil
     }
     
